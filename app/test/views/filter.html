@@ -1,0 +1,12 @@
+﻿<ul>
+    <li ng-repeat="item in items | filter:filterExpr">{{item.name}}</li>
+</ul>
+<button ng-click="changeFilter()">Change Filter</button>
+<pre>filter: {{filterExpr}}</pre>
+<hr/>
+
+<select class="form-control" ng-model='selectedFilter' ng-options='o.caption for o in options'></select>
+<ul>
+    <li ng-repeat="item in items | filter:selectedFilter.value">{{item.name}}</li>
+</ul>
+<pre>test: {{selectedFilter | json}}</pre> 

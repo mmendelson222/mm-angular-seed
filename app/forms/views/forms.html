@@ -1,0 +1,39 @@
+﻿<ol class="breadcrumb">
+    <li><a href="/">Main</a></li>
+    <li class="active">Training</li>
+</ol>
+
+<h1>Forms, Policies and Directives</h1>
+<div ng-bind="error" class="error"></div>
+<pre ng-if="errorStack" ng-bind="errorStack" class="error errorStack"></pre>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2>You probably won't need this wrapper</h2>
+    </div>
+    <div class="panel-body">
+            <ul class="nav nav-tabs">
+                <li ng-class="{active : state == ''}"><a href="" ng-click="state = ''">All</a></li>
+                <li ng-class="{active : state == 'forms'}"><a href="" ng-click="state = 'forms'">Favorites</a></li>
+                <li ng-class="{active : state == 'policies'}"><a href="" ng-click="state = 'policies'">All</a></li>
+                <li ng-class="{active : state == 'directives'}"><a href="" ng-click="state = 'directives'">Favorites</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active">
+                    <p>
+                      Now we're showing {{state}}.
+                    </p>
+                    <div>
+                        <div ng-repeat="f in forms | filter:{'DocType': state}" | orderBy:'Title'">
+                            <training-item item="f" />
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .tab-content -->
+    </div>
+</div>
+
+<pre ng-if="globals.debug">{{stores | json}}
+{{globals | json}}</pre>
+

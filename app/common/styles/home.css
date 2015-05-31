@@ -1,0 +1,117 @@
+.breadcrumb, #pf-pageTitle, #leftCol {
+  display: none; }
+
+.cbs-Slideshow .img-responsive img {
+  right: 0 !important; }
+
+#home-orderscal {
+  background: whitesmoke url("../images/base/bg-order-l.png") repeat-y left top;
+  min-height: 250px;
+  -webkit-box-shadow: -1px 3px 5px rgba(0, 0, 0, 0.175);
+  box-shadow: -1px 3px 5px rgba(0, 0, 0, 0.175);
+  margin-bottom: 18px; }
+  #home-orderscal #home-orderscal-inner {
+    background: url("../images/base/bg-order-r.png") repeat-y right top;
+    padding: 12px 24px; }
+    #home-orderscal #home-orderscal-inner div {
+      font-size: 12px;
+      padding: 9px 0 0 28px;
+      min-height: 32px; }
+      @media (min-width: 992px) {
+        #home-orderscal #home-orderscal-inner div a {
+          display: block; } }
+      #home-orderscal #home-orderscal-inner div.order-deliver {
+        background: url("../images/base/order-icon-del.png") no-repeat 0 9px; }
+      #home-orderscal #home-orderscal-inner div.order-alert {
+        background: url("../images/base/order-icon-alert.png") no-repeat 0 9px; }
+    #home-orderscal #home-orderscal-inner p {
+      margin-top: 18px; }
+  #home-orderscal h2 {
+    text-transform: none;
+    color: #b70301;
+    margin: 0; }
+    #home-orderscal h2 a:link, #home-orderscal h2 a:visited {
+      color: #555555; }
+    #home-orderscal h2 a:active, #home-orderscal h2 a:hover, #home-orderscal h2 a:focus {
+      color: #b70301; }
+
+.pf-reports, .pf-messages, .pf-contact, .pf-dashboard {
+  margin-bottom: 18px; }
+  .pf-reports h2, .pf-messages h2, .pf-contact h2, .pf-dashboard h2 {
+    color: #b70301;
+    text-transform: none; }
+  .pf-reports li, .pf-messages li, .pf-contact li, .pf-dashboard li {
+    margin-bottom: 9px; }
+  .pf-reports .dl-horizontal, .pf-messages .dl-horizontal, .pf-contact .dl-horizontal, .pf-dashboard .dl-horizontal {
+    margin-bottom: 9px; }
+    .pf-reports .dl-horizontal dt, .pf-messages .dl-horizontal dt, .pf-contact .dl-horizontal dt, .pf-dashboard .dl-horizontal dt {
+      width: 75px;
+      color: #555555;
+      float: left; }
+    .pf-reports .dl-horizontal dd, .pf-messages .dl-horizontal dd, .pf-contact .dl-horizontal dd, .pf-dashboard .dl-horizontal dd {
+      margin-left: 95px;
+      margin-bottom: 9px; }
+  .pf-reports .scroll, .pf-messages .scroll, .pf-contact .scroll, .pf-dashboard .scroll {
+    border: none;
+    background: none;
+    height: auto;
+    height: 15em; }
+
+.pf-reports .borderbox, .pf-reports .ms-WPBorder {
+  background: #feeec8; }
+
+.pf-dashboard {
+  border: solid 1px #ddd;
+  padding: 12px; }
+  .pf-dashboard h2 {
+    margin-top: 0; }
+
+.pf-quicklinks ul.dfwp-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .pf-quicklinks ul.dfwp-list li {
+    margin-bottom: 9px;
+    position: relative; }
+    .pf-quicklinks ul.dfwp-list li a {
+      display: block;
+      background: #62311d;
+      height: 65px;
+      color: #555555;
+      text-decoration: none;
+      border-radius: 6px;
+      -webkit-border-radius: 6px; }
+    .pf-quicklinks ul.dfwp-list li:nth-child(5n) a {
+      background: #b45937; }
+    .pf-quicklinks ul.dfwp-list li:nth-child(5n-1) a {
+      background: #e36914; }
+    .pf-quicklinks ul.dfwp-list li:nth-child(5n-2) a {
+      background: #b20000; }
+    .pf-quicklinks ul.dfwp-list li:nth-child(5n-3) a {
+      background: #d13f09; }
+    .pf-quicklinks ul.dfwp-list li:nth-child(5n-4) a {
+      background: #ffb101; }
+    .pf-quicklinks ul.dfwp-list li img {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      z-index: 0; }
+    .pf-quicklinks ul.dfwp-list li div {
+      position: relative;
+      z-index: 100;
+      height: 65px;
+      margin-left: 65px;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 6px 12px; }
+      .pf-quicklinks ul.dfwp-list li div strong {
+        font-weight: normal;
+        display: block;
+        margin-bottom: 4px; }
+      .pf-quicklinks ul.dfwp-list li div span {
+        font-size: 11px;
+        line-height: 13px;
+        display: block;
+        opacity: 0; }
+
+.pf-rightcol .ms-WPBody {
+  padding: 0 !important; }

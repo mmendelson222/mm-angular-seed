@@ -1,0 +1,91 @@
+﻿/* styles for the spinner */
+.waiting-box {
+    display: block;
+    position: fixed; /* fixed position so it doesn't scroll */
+    z-index: 9999; /* on top of everything else */
+    width: 250px;
+    margin-left: -125px; /* horizontally centered */
+    left: 50%;
+    top: 10px; /* displayed on the top of the page, just like Gmail's yellow info-box */
+    height: 60px;
+    padding: 10px;
+    background-color: #f3e9b5;
+    border-radius: 4px;
+}
+
+.waiting-box span {
+    display: block;
+    position: relative;
+    margin-left: 60px;
+    margin-top: 10px;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.waiting-box img {
+    margin-left: 15px;
+    margin-top: -5px;
+}
+
+.inline-block {
+    display: inline-block !important;
+}
+
+.disabled {
+    background-color: lightgray;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.gridNotice, .error {
+    color: #FF0000;
+}
+
+pre.errorStack {
+    background-color: inherit;
+    border: none;
+    font-size: 11px;
+    padding: 0 0 0 0;
+}
+
+/* styles for the activity text */
+.waiting-box span {
+    display: block;
+    position: relative;
+    margin-left: 60px;
+    margin-top: 10px;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.waiting-box img {
+    margin-left: 15px;
+    margin-top: -5px;
+}
+
+/* A dark translucent div that covers the whole app */
+.waiting-bg {
+    background-color: #a1a1a1;
+    opacity: 0.8;
+}
+
+.dl-horizontal dt {
+    float: left;
+    text-align: right;
+}

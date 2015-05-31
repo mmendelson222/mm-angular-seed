@@ -1,0 +1,16 @@
+<!-- reports view -->
+<ol class="breadcrumb">
+    <li><a href="{{globals.parameterFromUrl('SPHostUrl')}}" target="_parent">Home</a></li>
+    <li class="active">Test</li>
+</ol>
+<h1>Test</h1>
+<div ng-bind="error" class="error"></div>
+<pre ng-bind="errorStack" class="error errorStack"></pre>
+Please wait for {{seconds}} seconds (10 seconds max).
+<ul class="reportlist">
+    <li ng-repeat="item in data">
+        {{item}}
+    </li>
+</ul>
+<span ng-if="globals.debug"><pre>{{data | json}}</pre></span>
+<span ng-if="globals.debug"><pre>{{reports | json}}</pre></span>

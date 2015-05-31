@@ -1,0 +1,3 @@
+<span ng-show="item.Favorite == 'Yes'" ng-click="setFavorite(item, false)" class="glyphicon glyphicon-star"></span>
+<span ng-hide="item.Favorite == 'Yes'" ng-click="setFavorite(item, true)" class="glyphicon glyphicon-star-empty"></span>
+<span>{{item.Title}} <a href="{{item.Link}}">{{item.Link}}</a></span>

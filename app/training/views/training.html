@@ -1,0 +1,41 @@
+﻿<ol class="breadcrumb">
+    <li><a href="/">Main</a></li>
+    <li class="active">Training</li>
+</ol>
+
+<h1>Trainings</h1>
+<div ng-bind="error" class="error"></div>
+<pre ng-if="errorStack" ng-bind="errorStack" class="error errorStack"></pre>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2>You probably won't need this wrapper</h2>
+    </div>
+    <div class="panel-body">
+            <ul class="nav nav-tabs">
+                <li ng-class="{active : state == 'all'}"><a href="" ng-click="state = 'all'; favFilter = ''" data-toggle="tab">All</a></li>
+                <li ng-class="{active : state == 'favorites'}"><a href="" ng-click="state = 'favorites'; favFilter = {'Favorite':'Yes'}" data-toggle="tab">Favorites</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active">
+                    <p ng-show="state == 'all'">
+                      Now we're showing all items.
+                    </p>
+                    <p ng-show="state == 'favorites'">
+                       We're showing only favorites
+                    </p>
+
+                    <div>
+                        <div ng-repeat="t in trainings | filter:favFilter | orderBy:'Title'">
+                            <training-item item="t" />
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .tab-content -->
+    </div>
+</div>
+
+<pre ng-if="globals.debug">{{stores | json}}
+{{globals | json}}</pre>
+
